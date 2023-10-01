@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html> 
+<head>
+    <link id="theme" rel="stylesheet" type="text/css" href="syle1.css">
+    <link id="noTheme" href="source.html">
+  
+    <script>
+        function toggleTheme(value) {
+  
+            // Obtain the name of stylesheet 
+            // as a parameter and set it 
+            // using href attribute.
+            var sheets = document
+                .getElementsByTagName('link');
+  
+            sheets[0].href = value;
+        }
+    </script>
+</head>
+  
+<body>
+    <div class="grid-container">
+        <div class="header"> 
+            <h1>How to toggle themes using javascript</h1>
+            <h2>Presented by someone who is learning how to do it right now</h2>
+        </div>
+        <div class="nav">
+            <h3>Toggle styles:</h3>
+            <ul>
+                <li><button onclick="toggleTheme('style1.css')">
+                    <strong>Format 1</strong>
+                </button></li>
+                
+                <li><button onclick="toggleTheme('style2.css')">
+                    <strong>Format 2</strong>
+                </button></li>
+            
+                <li><button onclick="toggleTheme('style3.css')">
+                    <strong>Format 3</strong>
+                </button></li>
+            
+                <li><button onclick="toggleTheme('source.html')">
+                    <strong>No format</strong>
+                </button></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="p1"> 
+                <h2>Paragraph 1</h2>
+                <p>Lorem ipsum dolor sit amet. Qui ipsa minus ut atque amet <br>
+                    est odit asperiores ut dolorum harum ad recusandae voluptatem <br>
+                    hic perspiciatis voluptatibus. Qui dolores officia est vitae <br>
+                    nemo et Quis voluptatibus. Nam maiores tempora qui culpa magni <br>
+                    qui voluptatum corporis.</p>
+            </div>
+            <div class="p2"> 
+                <h2>Paragraph 2</h2>
+                <p>Lorem ipsum dolor sit amet. Qui ipsa minus ut atque amet <br>
+                    est odit asperiores ut dolorum harum ad recusandae voluptatem <br>
+                    hic perspiciatis voluptatibus. Qui dolores officia est vitae <br>
+                    nemo et Quis voluptatibus. Nam maiores tempora qui culpa magni <br>
+                    qui voluptatum corporis.</p>
+            </div>
+            <div class="p3"> 
+                <h2>Paragraph 3</h2>
+                <p>Lorem ipsum dolor sit amet. Qui ipsa minus ut atque amet <br>
+                    est odit asperiores ut dolorum harum ad recusandae voluptatem <br>
+                    hic perspiciatis voluptatibus. Qui dolores officia est vitae <br>
+                    nemo et Quis voluptatibus. Nam maiores tempora qui culpa magni <br>
+                    qui voluptatum corporis.</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Lorem ipsum  <br>
+                Qui ipsa <br>
+                est odit  <br>
+                harum ad  <br>
+                hic perspi <br>
+        </div>  
+        <div class="footer">
+            <p>Lorem ipsum dolor sit amet. Qui ipsa minus ut atque amet</p>
+        </div>
+    </div>
+</body>
+
+  
