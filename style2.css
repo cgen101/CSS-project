@@ -25,14 +25,14 @@ body {
 
 .header { 
     text-align: left;  
-    padding-left: 10px;
+    padding: 25px;
 }
 
 .header h1 { 
     letter-spacing: 5px;
 }
 
-.header h2 { 
+.header h3 { 
     letter-spacing: 5px;
 }
 .nav h3 { 
@@ -94,6 +94,8 @@ body {
 .main div {
     background-color: rgb(175, 96, 67);
     color: rgb(244, 242, 222);
+    line-height: 20px;
+    padding: 10px;
 }
         
 .p1 { 
@@ -112,13 +114,36 @@ body {
 
 .sidebar {
     text-align: center;
+    padding-top: 10px;
 }
 
+
+.sidebar ul {
+    text-align: left;  
+    padding-right: 10px; 
+}
+
+.sidebar li { 
+    padding-bottom: 70px;
+    font-weight: 700;
+}
+
+
 .footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10rem;
     text-align: center; 
     letter-spacing: 3px; 
     font-size: 20px;
-    padding-top: 10px;
+    font-size: medium; 
+    font-weight: 700;
+}
+
+.footer a {
+    font-family: Garamond, serif; 
+    color: rgb(175, 96, 67);
 }
 
 

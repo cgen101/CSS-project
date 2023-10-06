@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html> 
+<head>
+    <link id="theme" rel="stylesheet" type="text/css" href="syle1.css">
+  
+    <script>
+        function toggleTheme(value) {
+            var sheets = document
+                .getElementsByTagName('link');
+  
+            sheets[0].href = value;
+        }
+    </script>
+</head>
+  
+<body>
+    <div class="grid-container">
+        <div class="header"> 
+            <h1>How I made this</h1>
+            <h3>CSS assignment for CS3320- Internet Software Development</h3>
+        </div>
+        <div class="nav">
+            <h3>Toggle styles:</h3>
+            <ul>
+                <li><button onclick="toggleTheme('style1.css')">
+                    <strong>Format 1</strong>
+                </button></li>
+                
+                <li><button onclick="toggleTheme('style2.css')">
+                    <strong>Format 2</strong>
+                </button></li>
+            
+                <li><button onclick="toggleTheme('style3.css')">
+                    <strong>Format 3</strong>
+                </button></li>
+            
+                <li><button onclick="toggleTheme('index.html')">
+                    <strong>No format</strong>
+                </button></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="p1"> 
+                <h2>The HTML:</h2>
+                <p>I started with a div stucture that seperated the content into 
+                    header, navigation bar, paragraphs 1-3, sidebar, and footer. The navigation 
+                    bar is an unordered list of buttons. I laid out the divs in descending order 
+                    how of they would appear in the browser. 
+                    I also put the entire body into a grid container div, so that I could apply
+                    grid formatting to the CSS. 
+                </p>
+            </div>
+            <div class="p2"> 
+                <h2>The CSS:</h2>
+                <p>Learning how to do layouts in CSS was kind of a challenge. I first tried to 
+                    lay things out purely with 'float' and 'display: inline', but that was proving very
+                    difficult. I decided to look into the grid layout instead, and went with that for 
+                    the structure of all 3 formats. To use the grid functionality in CSS, I put all
+                    of what I wanted to lay out in 1 div that acts as the grid container. I then specified
+                    the dimensions of each child div within the grid container with the grid-area shorthand. 
+                    After everything was laid out, I applied additional styling like background color, 
+                    rounded borders, font families, etc.  
+
+                </p>
+            </div>
+            <div class="p3"> 
+                <h2>The JavaScript</h2>
+                <p>I used Javascript to add the toggle theme functionality to the navigation buttons. 
+                    I thought this would be complicated, but it was quite simple. I added a function that
+                    takes a value (which is the 'href' value of the stylesheets) to the head of the HTML. 
+                    The function creates a variable 'sheets' that stores a link from the HTML. 
+                    Each time a button is clicked, the href value of the desired stylesheet is passed to the function, 
+                    and the href value of sheets[0] (the first link) is changed to the value passed. In short,
+                    the function changes the linked stylesheet which allows themes to be toggled. 
+                </p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h2>What I learned:</h2>
+            <ul>
+                <li>Div structure</li>
+                <li>Using VS code for HTML</li>
+                <li>CSS grid</li>
+                <li>CSS flexbox</li>
+                <li>CSS text and box shadow</li>
+                <li>CSS :hover</li>
+                <li>CSS gradient</li>
+                <li>Basic JavaScript</li>
+            </ul>
+        </div>  
+        <div class="footer">
+            <p>Page created by: <a href="https://github.com/cgen101">chloe</a></p>
+            <p>Assigned by Rick King for CS3320</p>
+        </div>
+    </div>
+</body>
+
+  

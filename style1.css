@@ -26,6 +26,7 @@ body {
 
 .header { 
     text-align: center;  
+    padding: 25px;
 }
 
 .nav h3 {
@@ -62,15 +63,19 @@ body {
 
 .main div { 
     padding-left: 10px; 
+    line-height: 20px;
 }
 .sidebar { 
     text-align: center;
     padding-top: 10px;
 }
 
-.footer {
-    text-align: center; 
-    letter-spacing: 3px; 
-    font-size: x-small;
-    padding-top: 10px; 
+.sidebar ul {
+    text-align: left;  
+    padding-right: 10px; 
+    list-style-type: square;
+}
+
+.sidebar li { 
+    padding-bottom: 70px;
 }
